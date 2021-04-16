@@ -142,7 +142,10 @@ button{
 	line-height: 15px;
 	font-size: 13px;
 }
-
+.se-img p{
+	color: var(--fs);
+	padding-bottom: 5px;
+}
 /*======================*/
 /*dro down on hover*/
 /*======================*/
@@ -212,7 +215,7 @@ button{
   padding:0px 10px;
   margin: 0px;
   display: inline-block;
-  line-height: 35px;
+  line-height: 30px;
 }
 .Lorenzo span {
   font-size: 1.5rem;
