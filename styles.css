@@ -27,7 +27,6 @@ button{
 }
 .header{
 	height: auto;
-	border:1px solid red ;	
 }
 .top-nav{
 	display: flex;
@@ -74,9 +73,10 @@ button{
 	width: 100%;
 	height: 100%;
 	background-image: url('./image/cover-web-1.jpg');
-	background-size: auto;
+	/*background-size: auto;*/
+	background-size: cover;
 	background-position: center;	
-	border: 1px solid green;
+	border: 1px solid transparent;
 }
 .sen-nav{
 	display: flex;
@@ -242,10 +242,6 @@ button{
 	flex-direction: column;
 	flex-wrap: wrap;	 
 }
-.left-content>div{
-	border: 1px solid red;
-}
-
 .left-side{
 	width: 45%;
 	margin-left:40px;
@@ -397,7 +393,7 @@ button{
 /*=============================*/
 .main-section{
 	width: 100%;
-	border: 1px solid red;i
+	height: auto;
 }
 .container{
 	width: 85%;
@@ -454,100 +450,4 @@ button{
 }
 .pers-cons-text h2{
 	
-}
-/*====================*/
-/*media screen*/
-@media screen and (max-width: 1124px){
-	.header{height: 550px;}	
-	.nav-items{margin-left: 10px;}
-	.nav-items li{
-		margin-left: 15px;
-	}
-}
-@media screen and (max-width: 1132px){
-	/*slide content*/
-	.left-content{
-	/*margin-left:40px;*/
-		margin-top: 55px;
-		display: flex;
-		flex-direction: column;
-		flex-wrap: wrap;	 
-	}
-	.left-content>div{
-		border: 1px solid red;
-	}
-	.left-side{
-		width: 60%;
-		/*width: auto;*/
-		margin-left:20px;
-		
-	}
-	.left-side h1, h2{
-		background-color: rgba(250, 250, 250, 0.5);
-		padding: 5px 10px;
-		margin-top: 5px;
-		font-weight: normal;
-		display: black;
-	}
-	.left-side h2 span{
-		font-weight: bold;
-		font-size: 1.5rem;
-	}
-	.left-side h1{
-		font-family: Roboto, sans-serif;
-		font-weight: 100;
-		font-style: normal;
-		font-size: 2rem;
-	}
-	.link-center{
-		margin-top: 10px;
-		width: 80px;
-		align-self: center;	
-	}
-	.link-center svg{
-		fill: rgba(250, 250, 250, 0.75);
-	}
-	.right-side{
-		width: 60%;
-		display: flex;
-		/*align-self: flex-end;		*/
-		background-color:rgba(0, 0, 0, 0.75);
-		padding: 10px 5px;
-		margin-right: 35px;
-		margin-top: 10px;
-	}
-	.De{
-		/*width: 70%;*/
-		width: 350px;
-		color: #fff;
-	}
-	.De h2 {
-		font-size: 16px;
-		background-color: transparent;
-		color: #fff;
-		width: 70%;		
-	}
-	.De p{
-		background-color: transparent;
-		color: #fff;
-		width: 70%;
-		margin-left: 10px;
-		font-size: 14px;
-	}
-
-	.yeah{
-		width: 40%;
-		margin-top: 25px;
-	}
-	.yeah span{
-		width: 30%;
-		font-size: 16px;
-		background-color: var(--se);
-		padding: 10px;
-		margin-top: 40px;
-		color: #fff;
-	}
-}/*end of max width 1135*/
-@media screen and (max-width: 850px){
-
 }
