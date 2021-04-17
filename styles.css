@@ -26,10 +26,8 @@ button{
 	font-family: Roboto, sans-serif;
 }
 .header{
-	height: 705px;
-	/*background-image: url('./images/oral-b-cover-web-1_3.webp');*/
-	background-image: url('./image/cover-web-1.jpg');
-	background-size: cover;	
+	height: auto;
+	border:1px solid red ;	
 }
 .top-nav{
 	display: flex;
@@ -75,7 +73,10 @@ button{
 .slider{
 	width: 100%;
 	height: 100%;
-	/*background-color: rgba(0, 0, 0, 0.5);		*/
+	background-image: url('./image/cover-web-1.jpg');
+	background-size: auto;
+	background-position: center;	
+	border: 1px solid green;
 }
 .sen-nav{
 	display: flex;
@@ -123,28 +124,34 @@ button{
 /*.dropdown a:hover {background-color: #ddd;}*/
 
 .show-dropdown {display: block;}
-#myDropdown .fs-img img{
-	width: 75px;
-	padding-left: 5px;
-}
+
 #myDropdown .dro-content{
 	display: flex;
 }
 #myDropdown .dro-content:hover{
 	background-color: rgba(240, 240, 240, 1.5);
 }
+#myDropdown .fs-img img{
+	width: 75px;
+	padding-left: 5px;
+	margin-top: 10px ;
+	height: 65px;
+}
+#myDropdown .se-img p{
+	width: 100%;
+	display: inline-block;
+}
 #myDropdown .se-img img{
 	width: 120px;
 	padding-left: 5px;
 }
 .se-img{
-	margin-left: 20px;
+	margin-left: 15px;
 	line-height: 15px;
 	font-size: 13px;
 }
 .se-img p{
 	color: var(--fs);
-	padding-bottom: 5px;
 }
 /*======================*/
 /*dro down on hover*/
@@ -229,28 +236,33 @@ button{
 /*======================*/
 
 .left-content{
-	margin-left:40px;
+	/*margin-left:40px;*/
 	margin-top: 55px;
-	display: inline-block; 
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;	 
 }
-.left-content h1{
-	width: 60%;
+.left-content>div{
+	border: 1px solid red;
 }
-.left-content h2{
-	width: 50%;
+
+.left-side{
+	width: 45%;
+	margin-left:40px;
+	
 }
-.left-content h1, h2{
+.left-side h1, h2{
 	background-color: rgba(250, 250, 250, 0.5);
 	padding: 5px 10px;
 	margin-top: 5px;
 	font-weight: normal;
 	display: black;
 }
-.left-content h2 span{
+.left-side h2 span{
 	font-weight: bold;
 	font-size: 1.5rem;
 }
-.left-content h1{
+.left-side h1{
 	font-family: Roboto, sans-serif;
 	font-weight: 100;
 	font-style: normal;
@@ -258,55 +270,64 @@ button{
 }
 .link-center{
 	width: 80px;
-	position: absolute;
-	left: 45%;
+	align-self: center;	
 }
 .link-center svg{
-	fill: rgba(250, 250, 250, 0.5);
+	fill: rgba(250, 250, 250, 0.75);
 }
 .right-side{
-	width: 50%;
+	width: 40%;
 	display: flex;
-	position: absolute;
-	right: 0px;
-	bottom: 35px;
+	align-self: flex-end;		
+	background-color:rgba(0, 0, 0, 0.75);
+	padding: 10px 5px;
 	margin-right: 35px;
-	background-color:rgba(0, 0, 0, 0.75); 	
 }
-.De h2 , p{
+.De{
+	/*width: 70%;*/
+	width: 350px;
+	color: #fff;
+}
+.De h2 {
+	font-size: 16px;
+	background-color: transparent;
+	color: #fff;
+	width: 70%;		
+}
+.De p{
 	background-color: transparent;
 	color: #fff;
 	width: 70%;
-	padding: 0px 10px;
+	margin-left: 10px;
+	font-size: 14px;
 }
+
 .yeah{
-	width: 30%;
+	width: 40%;
 	margin-top: 25px;
 }
 .yeah span{
 	width: 30%;
 	font-size: 16px;
 	background-color: var(--se);
-	padding: 10px 15px;
-	margin-top: 20px;
+	padding: 10px;
+	margin-top: 40px;
 	color: #fff;
 }
+.slide-bottom{
+	margin-top: 5.5rem;
+	width: 100%;
+	display: flex;
+}
 .slide-bottom .bootom-left{
-	width: 60%;
+	width: 50%;
 	background-color: #ff414d;
+	padding: 10px 0px;
 }
 .slide-bottom .bootom-right{
-	width: 40%;
+	width: 50%;
 	background-color:rgba(0, 0, 0, 0.75); 	
-}
-.slide-bottom{
-	position: absolute;
-	top: 100%;
-	left: 0px;
-	width: 100%;
-	line-height: 75px;
-	display: flex;
-	justify-content: space-between;
+	padding: 10px 0px;	
 }
 .bootom-left h3 span{
 	font-weight: bold;
@@ -371,11 +392,162 @@ button{
 .media__left{
 	min-width: 30px;
 }
-@media screen and (max-width: 1024px){
+/*=============================*/
+/*main-section*/
+/*=============================*/
+.main-section{
+	width: 100%;
+	border: 1px solid red;i
+}
+.container{
+	width: 85%;
+	margin: auto;
+}
+.min-top{
+	display: flex;
+	justify-content: space-between;
+	height: 90px;
+}
+.main-text{
+	width: 50%;
+	display: flex;
+}
+.main-text p{
+	padding-left: 20px;
+	margin-top: 25px;
+}
+.main-list{
+	display: flex;
+	justify-content: space-between;
+	line-height: 90px;
+}
+.commit{
+	line-height: 90px;
+}
+.main-list li{
+	margin-right: 15px;
+}
+.main-list li:last-child{
+	margin-right: 0px;
+}
+/*=======================*/
+/*component-section*/
+/*=======================*/
+.component-text{
+	color: #000000;
+}
+.component-section{
+	display: flex;
+	justify-content: space-between;
+}
+.pers-img{
+	display: flex;
+	margin-top: 25px;
+
+}
+.pers-img img{
+	border-radius: 50%;
+}
+.pers-cons-text{
+	align-self: center;
+	margin-left: 25px;
+}
+.pers-cons-text h2{
+	
+}
+/*====================*/
+/*media screen*/
+@media screen and (max-width: 1124px){
 	.header{height: 550px;}	
 	.nav-items{margin-left: 10px;}
 	.nav-items li{
 		margin-left: 15px;
 	}
+}
+@media screen and (max-width: 1132px){
+	/*slide content*/
+	.left-content{
+	/*margin-left:40px;*/
+		margin-top: 55px;
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;	 
+	}
+	.left-content>div{
+		border: 1px solid red;
+	}
+	.left-side{
+		width: 60%;
+		/*width: auto;*/
+		margin-left:20px;
+		
+	}
+	.left-side h1, h2{
+		background-color: rgba(250, 250, 250, 0.5);
+		padding: 5px 10px;
+		margin-top: 5px;
+		font-weight: normal;
+		display: black;
+	}
+	.left-side h2 span{
+		font-weight: bold;
+		font-size: 1.5rem;
+	}
+	.left-side h1{
+		font-family: Roboto, sans-serif;
+		font-weight: 100;
+		font-style: normal;
+		font-size: 2rem;
+	}
+	.link-center{
+		margin-top: 10px;
+		width: 80px;
+		align-self: center;	
+	}
+	.link-center svg{
+		fill: rgba(250, 250, 250, 0.75);
+	}
+	.right-side{
+		width: 60%;
+		display: flex;
+		/*align-self: flex-end;		*/
+		background-color:rgba(0, 0, 0, 0.75);
+		padding: 10px 5px;
+		margin-right: 35px;
+		margin-top: 10px;
+	}
+	.De{
+		/*width: 70%;*/
+		width: 350px;
+		color: #fff;
+	}
+	.De h2 {
+		font-size: 16px;
+		background-color: transparent;
+		color: #fff;
+		width: 70%;		
+	}
+	.De p{
+		background-color: transparent;
+		color: #fff;
+		width: 70%;
+		margin-left: 10px;
+		font-size: 14px;
+	}
+
+	.yeah{
+		width: 40%;
+		margin-top: 25px;
+	}
+	.yeah span{
+		width: 30%;
+		font-size: 16px;
+		background-color: var(--se);
+		padding: 10px;
+		margin-top: 40px;
+		color: #fff;
+	}
+}/*end of max width 1135*/
+@media screen and (max-width: 850px){
 
 }
