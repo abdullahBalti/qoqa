@@ -33,7 +33,7 @@ button{
 }
 .top-nav{
 	display: flex;
-	background-color: #fff;
+	background-color: #f7f7f7;
 	line-height: 60px;
 	padding: 0px 12px;
 	justify-content: space-between;
