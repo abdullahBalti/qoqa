@@ -19,6 +19,9 @@ body{
 }
 li{list-style: none}
 a{text-decoration: none}
+a:hover{
+	text-decoration: none;
+}
 button{
 	background-color: transparent;
 	border: none;
@@ -51,7 +54,7 @@ button{
 .nav-items li{
 	margin-left: 25px;
 }
-.nav-items li:last-child button{
+.nav-items li:last-child a{
 	font-size: 14px;
 	margin-left: 10px;
 	background-color: #E0E0E0;
@@ -389,65 +392,134 @@ button{
 	min-width: 30px;
 }
 /*=============================*/
-/*main-section*/
+/*page nav section*/
 /*=============================*/
-.main-section{
+.page-nav-section{
+	border-bottom: 1px solid #4444;
 	width: 100%;
-	height: auto;
 }
-.container{
-	width: 85%;
+.page-nav{
+	width: 100%;
+	display: flex;
 	margin: auto;
-}
-.min-top{
-	display: flex;
-	justify-content: space-between;
-	height: 90px;
-}
-.main-text{
-	width: 50%;
-	display: flex;
-}
-.main-text p{
-	padding-left: 20px;
-	margin-top: 25px;
-}
-.main-list{
-	display: flex;
-	justify-content: space-between;
 	line-height: 90px;
 }
-.commit{
-	line-height: 90px;
+.page-link{
+	width: 30%;
 }
-.main-list li{
-	margin-right: 15px;
+.page-link-list li{
+	margin-left: 15px;
+	text-transform: capitalize;	
 }
-.main-list li:last-child{
-	margin-right: 0px;
+.page-link-list a{
+	color: var(--fs);
+}
+.page-link-list li:first-child{
+	margin-left: 0px;
+}
+.page-link-list{
+	display: flex;
+}
+.commint-link{
+	width: 20%;
+	color: var(--se);
+}
+.commint-link::before{
+	content: "";
+	border-left: 1px solid var(--fs);
+	padding-right: 15px;
+}
+.text-link{
+	display: flex;
+	line-height: 20px;
+}
+.text-link img{
+	width: 45px;
+	height: 45px;
+	border-radius: 50%;
+	margin-top: 15px;	
+}
+.text-link p{
+	margin: 15px 15px;
+}
+.text-link p span{
+	font-size: 13px;
 }
 /*=======================*/
 /*component-section*/
 /*=======================*/
-.component-text{
-	color: #000000;
+/* blogging card CSS */
+.backgroundBlack{
+	background-color: #f7f7f7;
+	color: var(--fs);
 }
-.component-section{
-	display: flex;
-	justify-content: space-between;
-}
-.pers-img{
-	display: flex;
-	margin-top: 25px;
-
-}
-.pers-img img{
+.avatarBox img{
 	border-radius: 50%;
 }
-.pers-cons-text{
-	align-self: center;
-	margin-left: 25px;
+.newsletter {
+  /* border: 1px solid #262626; */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+  background-color: #fff;
 }
-.pers-cons-text h2{
-	
+.formInput{
+	background-color: var(--fs);
+	padding: 10px 15px;
+}
+.backgroundDark{
+	background-color: var(--se);
+	padding: 6px 5px;
+	margin-left: -5px;
+}
+.emailInp{
+	padding: 5px 5px;
+}
+.specs {
+  background-color: #f7f7f7;
+  color: var(--fs);
+}
+.specs p {
+  margin: 3px;
+}
+
+.bloggingCard {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+.bloggingCard:hover {
+  box-shadow: 0 2px 35px rgba(0, 0, 0, 0.3);
+}
+.avatarSmall {
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+}
+.blogerDetail {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+.blogerDetail p {
+  margin: 2px;
+}
+.blogShort {
+  height: 200px;
+}
+.truffleCard {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+.truffleCard:hover {
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+}
+.social-Link{
+	display: flex;
+  	font-size: 2em;
+}
+.socialLink {
+  color: #eb008a;
+  margin-left: 10px;
+}
+footer {
+  background-color: #eb008a;
+  color: white;
 }
