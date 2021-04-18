@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="responsive.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
 	<header class="header">
@@ -512,9 +512,9 @@
             <p>Running for a good cause 🏃</p>
           </div>
           <div class="blogerDetail">
-            <div>
+            <div class="img-flex">
               <img src="images/Bertrand.gif" class="avatarSmall" alt="" />
-          				<img src="" alt="">    <p class="name">Flying Ottar</p>
+          		<p class="name">Flying Ottar</p>
               <p class="date text-muted">March 30, 2021</p>
             </div>
           </div>
@@ -531,7 +531,7 @@
           <div class="blogerDetail">
             <div>
               <img src="images/Bertrand.gif" class="avatarSmall" alt="" />
-          				<img src="" alt="">    <p class="name">Flying Ottar</p>
+          		<p class="name">Flying Ottar</p>
               <p class="date text-muted">March 30, 2021</p>
             </div>
           </div>
@@ -547,8 +547,8 @@
           </div>
           <div class="blogerDetail">
             <div>
-              <img src="images/Bertrand.gif" class="avatarSmall" alt="" />
-          				<img src="" alt="">    <p class="name">Flying Ottar</p>
+              <img src="images/Sarah.gif" class="avatarSmall" alt="" />
+          		<p class="name">Flying Ottar</p>
               <p class="date text-muted">March 30, 2021</p>
             </div>
           </div>
@@ -556,8 +556,8 @@
       </div>
       <div class="col-md-12">
         <div class="text-center p-5">
-          <button class="myBtn backgroundDark text-white">
-            VIEW ALL ARTICLES
+          <button class="myBtn backgroundDark text-white" style="padding:10px 20px;">
+            VOIR TOUS LES ARTICLES
           </button>
         </div>
       </div>
@@ -599,15 +599,20 @@
   <!-- Footer Start -->
   <footer class="p-5">
     <div class="text-center">
-      <p class="fs-1">We do anything, but we do it for you</p>
+      <p class="fs-1" style="font-size: 4vw;">On fait n’importe quoi, mais on le fait pour toi</p>
       <p class="fs-5">Since 2005</p>
       <div class="p-5">
-        <img width="100px" src="../images/logo.png" alt="" />
+        <img width="100px" src="../images/footer-logo.png" alt="" />
         <p>© 2005–2021 QoQa Services SA all rights reserved</p>
       </div>
     </div>
   </footer>
   <!-- Footer End -->	
+ <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> 
 <script src="app.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 </body>
 </html>
