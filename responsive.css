@@ -8,10 +8,7 @@
 	  }
 	/*================*/
 	.top-nav {
-	  	/*display: block;*/
   		background-color: #f7f7f7;
-	  	/*line-height: 60px;*/
-  		/*padding: 0px 12px;*/
 	}
 	.nav-left{
   		padding: 0;
@@ -48,7 +45,13 @@
 	.nav-items-display{
 		flex-direction: column;
 		height: auto;
-		line-height: 45px; 
+		padding: 0px 15px;		
+		line-height: 45px;
+  		background-color: #f7f7f7;
+  		z-index: 550;		
+	}
+	.dropdown-click{
+		display: none;
 	}
 	.nav-items-display a:hover{
 		color: var(--se);
