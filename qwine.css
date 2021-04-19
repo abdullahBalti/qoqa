@@ -38,7 +38,7 @@ button {
   grid-template-columns: repeat(16, 1fr);
   grid-template-rows: repeat(12, 55px);
   /*grid-auto-rows: repeat(12, 150px);*/
-  background-image: url("./image/cover-web-1.jpg");
+  background-image: url("https://static.qoqa.ch/component/slider/media/images/000/159/169/original/cover-web-1.jpg?1618487152");
   background-size: cover;
   background-position: center;    
 }
@@ -438,9 +438,20 @@ button {
   font-size: 2.5rem;
   letter-spacing: 5px;
 }
+/*Liste-des-produits*/
+.Liste-des-produits{
+  margin-top: 45px;
+}
+
+.service-panal{
+  margin-top: 25px;
+  background-color: rgb(249, 240, 206);
+}
 /*=============================*/
 /*page nav section*/
 /*=============================*/
+
+
 .page-nav-section {
   border-bottom: 1px solid #4444;
   width: 100%;

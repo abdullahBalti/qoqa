@@ -20,3 +20,10 @@ clickbtn.addEventListener("click", ()=>{
 });
 
 
+const resDropBtn = document.querySelector(".res-drop-btn");
+const navItems = document.querySelector(".nav-items");
+resDropBtn.addEventListener("click", ()=>{
+	// alert("OK");
+  navItems.classList.toggle("nav-items-display");
+});
+
