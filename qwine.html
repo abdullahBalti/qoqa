@@ -9,8 +9,7 @@
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>QoQa - ORAL-B Pulsonic Slim One 2000</title>
-    <link rel="stylesheet" href="qwine.css" />
-    <link rel="stylesheet" href="responsive.css" />
+    <link rel="stylesheet" href="css/qwine.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
@@ -499,110 +498,57 @@
           </div>
         </div>
       </div>
-    </div>
+    </div>   
     <!-- Content Start -->
     <div class="content backgroundBlack py-5">
       <div class="container">
-        <div class="row">
-          <div class="col-lg-8 col-md-10 col-sm-12">
-            <div class="py-3">
-              <h3 class="m-0">Petit domaine au grand rapport prix/plaisir que l'on suit depuis 10 ans, vous êtes nombreux à attendre son passage annuel et on comprend pourquoi !</h3>
-              <p class="pt-4">Situé sur la Côte des Amandiers, Philippe Ziegler est un vigneron sensible qui puise son talent et ses connaissances dans l’amour qu’il porte à son vignoble et ses vins.
-              </p>
-              <p class="pt-2">Un riesling pur, lumineux et tendu sur le citron/bergamote et la pomme jaune. Le pinot blanc est gourmand et montre une chair de poire, pâte de coing et une note de tilleul. Superbe gourmandise en bouche, on croque dans les fruits jaunes. Fidèle explosion de Loukoum à la rose pour le Gewürztraminer et parfait équilibre de bouche.
-              </p>              
-            </div>
-            <div class="d-flex">
-              <div class="avatarBox py-3">
-                <img src="images/Liridon.gif" alt="" />
+        <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header border-bottom-0">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">×</span>
+                </button>
               </div>
-              <div class="py-3 p-3 d-flex justify-content-center align-items-start flex-column">
-                <h4>Selected by QoQartman</h4>
-                <p class="color">Find out who QoQartman is</p>
+              <div class="modal-body">
+                <div class="form-title text-center">
+                  <h4>Login</h4>
+                </div>
+                <div class="d-flex flex-column text-center">
+                  <form>
+                    <div class="form-group">
+                      <input type="email" class="form-control" id="email1"placeholder="Your email address...">
+                    </div>
+                    <div class="form-group">
+                      <input type="password" class="form-control" id="password1" placeholder="Your password...">
+                    </div>
+                    <button type="button" class="btn btn-info btn-block btn-round">Login</button>
+                  </form>
+                  
+                  <div class="text-center text-muted delimiter">or use a social network</div>
+                  <div class="d-flex justify-content-center social-buttons">
+                    <button type="button" class="btn btn-secondary btn-round" data-toggle="tooltip" data-placement="top" title="Twitter">
+                      <i class="fab fa-twitter"></i>
+                    </button>
+                    <button type="button" class="btn btn-secondary btn-round" data-toggle="tooltip" data-placement="top" title="Facebook">
+                      <i class="fab fa-facebook"></i>
+                    </button>
+                    <button type="button" class="btn btn-secondary btn-round" data-toggle="tooltip" data-placement="top" title="Linkedin">
+                      <i class="fab fa-linkedin"></i>
+                    </button>
+                  </di>
+                </div>
               </div>
             </div>
+              <div class="modal-footer d-flex justify-content-center">
+                <div class="signup-section">Not a member yet? <a href="#a" class="text-info"> Sign Up</a>.</div>
+              </div>
           </div>
-          <div class="col-lg-4 col-md-8 col-sm-12">
-              <img class="jss212" title="Image 77505" src="https://static.qoqa.ch/component/gallery/images/files/000/077/505/small/Portrait.jpg?1618487455"  alt="Image 77505" style="width: 100%;">            
-          </div>
-        </div>
+        </div>        
       </div>
     </div>
     <!-- Content end -->
-    <!-- Liste-des-produits -->
-    <div class="Liste-des-produits">
-      <div class="container">
-        <div class="heading"><h3>Liste des produits</h3></div>
-        <div class="Liste-des">
-          <div class="row">
-            <div class="col-md-4">
-                <div class="card" style="width: 100%;">
-                  <img src="https://static.qoqa.ch/bundle_group_images/files/000/010/870/big/vin-3blls-light.jpg?1618477274" style="height: 100%;">
-                  <div class="card-body">
-                    <h5 class="card-title">3x Pinot Blanc</h5>                    
-                    <p>CHF 39</p>
-                    <a href="#" class="" style="background-color:#dfdfdf; padding: 10px 20px; color:#444; margin-left:5.5rem;">EPUISE <i class="fas fa-shopping-cart"></i></a>
-                  </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card" style="width: 100%;">
-                  <img src="https://static.qoqa.ch/bundle_group_images/files/000/010/870/big/vin-3blls-light.jpg?1618477274" style="height: 100%;">
-                  <div class="card-body">
-                    <h5 class="card-title">3x Pinot Blanc</h5>                    
-                    <p>CHF 39</p>
-                    <a href="#" class="" style="background-color:#dfdfdf; padding: 10px 20px; color:#444; margin-left:5.5rem;">EPUISE <i class="fas fa-shopping-cart"></i></a>
-                  </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card" style="width: 100%;">
-                  <img src="https://static.qoqa.ch/bundle_group_images/files/000/010/870/big/vin-3blls-light.jpg?1618477274" style="height: 100%;">
-                  <div class="card-body">
-                    <h5 class="card-title">3x Pinot Blanc</h5>                    
-                    <p>CHF 39</p>
-                    <a href="#" class="" style="background-color:#dfdfdf; padding: 10px 20px; color:#444; margin-left:5.5rem;">EPUISE <i class="fas fa-shopping-cart"></i></a>
-                  </div>
-                </div>
-            </div>
-          </div><!-- end of fs row -->
-          <div class="row">
-            <div class="col-md-4">
-                <div class="card" style="width: 100%;">
-                  <img src="https://static.qoqa.ch/bundle_group_images/files/000/010/870/big/vin-3blls-light.jpg?1618477274" style="height: 100%;">
-                  <div class="card-body">
-                    <h5 class="card-title">3x Pinot Blanc</h5>                    
-                    <p>CHF 39</p>
-                    <a href="#" class="" style="background-color:#dfdfdf; padding: 10px 20px; color:#444; margin-left:5.5rem;">EPUISE <i class="fas fa-shopping-cart"></i></a>
-                  </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card" style="width: 100%;">
-                  <img src="https://static.qoqa.ch/bundle_group_images/files/000/010/870/big/vin-3blls-light.jpg?1618477274" style="height: 100%;">
-                  <div class="card-body">
-                    <h5 class="card-title">3x Pinot Blanc</h5>                    
-                    <p>CHF 39</p>
-                    <a href="#" class="" style="background-color:#dfdfdf; padding: 10px 20px; color:#444; margin-left:5.5rem;">EPUISE <i class="fas fa-shopping-cart"></i></a>
-                  </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card" style="width: 100%;">
-                  <img src="https://static.qoqa.ch/bundle_group_images/files/000/010/870/big/vin-3blls-light.jpg?1618477274" style="height: 100%;">
-                  <div class="card-body">
-                    <h5 class="card-title">3x Pinot Blanc</h5>                    
-                    <p>CHF 39</p>
-                    <a href="#" class="" style="background-color:#dfdfdf; padding: 10px 20px; color:#444; margin-left:5.5rem;">EPUISE <i class="fas fa-shopping-cart"></i></a>
-                  </div>
-                </div>
-            </div>
-          </div><!-- end of se row -->          
-        </div>
-      </div>
-    </div>
-
-    <!-- Liste-des-produits -->
+   
     <!-- service panal start -->
     <div class="panel service-panal">
       <div class="container">
@@ -703,111 +649,7 @@
       </div>
     </div>
     <!-- end of spaceification section -->
-    <!-- garden section one -->
-    <section class="garden">
-      <div class="container">
-        <!-- 1 row -->
-        <div class="row">
-          <div
-            class="col-md-6 col-sm-12 col-text d-flex flex-column align-self-center"
-          >
-            <h3>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. In,
-              cupiditate.
-            </h3>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et animi
-              ab quas iure illo dolor repellat ex vel consectetur adipisicing
-              elit. Et animi ab quas iure illo dolor repellat ex vel sed
-              deleniti est voluptatem veritatis, corporis commodi, aut nobis
-              iste at facere sed deleniti est voluptatem veritatis, corporis
-              commodi,.
-            </p>
-          </div>
-          <div class="col-md-6 col-sm-12">
-            <img src="image/galerie-1.webp" alt="" />
-          </div>
-        </div>
-        <!-- end of 1 row -->
-        <!-- 2 row -->
-        <div class="row">
-          <div class="col-md-6 col-sm-12">
-            <img src="image/galerie-2.webp" alt="" />
-          </div>
-          <div
-            class="col-md-6 col-sm-12 col-text d-flex flex-column align-self-center"
-          >
-            <h3>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. In,
-              cupiditate.
-            </h3>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et animi
-              ab quas iure illo dolor repellat ex vel consectetur adipisicing
-              elit. Et animi ab quas iure illo dolor repellat ex vel sed
-              deleniti est voluptatem veritatis, corporis commodi, aut nobis
-              iste at facere sed deleniti est voluptatem veritatis, corporis
-              commodi,.
-            </p>
-          </div>
-        </div>
-        <!-- end of 2 row -->
-      </div>
-    </section>
-    <!-- end of garden section -->
-    <!-- garden section tow -->
-    <section class="garden">
-      <div class="container">
-        <!-- 1 row -->
-        <div class="row">
-          <div
-            class="col-md-6 col-sm-12 col-text d-flex flex-column align-self-center"
-          >
-            <h3>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. In,
-              cupiditate.
-            </h3>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et animi
-              ab quas iure illo dolor repellat ex vel consectetur adipisicing
-              elit. Et animi ab quas iure illo dolor repellat ex vel sed
-              deleniti est voluptatem veritatis, corporis commodi, aut nobis
-              iste at facere sed deleniti est voluptatem veritatis, corporis
-              commodi,.
-            </p>
-          </div>
-          <div class="col-md-6 col-sm-12">
-            <img src="image/galerie-1.webp" alt="" />
-          </div>
-        </div>
-        <!-- end of 1 row -->
-        <!-- 2 row -->
-        <div class="row">
-          <div
-            class="col-md-6 col-sm-12 col-text d-flex flex-column align-self-center"
-          >
-            <h3>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. In,
-              cupiditate.
-            </h3>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et animi
-              ab quas iure illo dolor repellat ex vel consectetur adipisicing
-              elit. Et animi ab quas iure illo dolor repellat ex vel sed
-              deleniti est voluptatem veritatis, corporis commodi, aut nobis
-              iste at facere sed deleniti est voluptatem veritatis, corporis
-              commodi,.
-            </p>
-          </div>
-          <div class="col-md-6 col-sm-12">
-            <img src="image/galerie-2.webp" alt="" />
-          </div>
-        </div>
-        <!-- end of 2 row -->
-      </div>
-    </section>
-    <!-- end of garden section tow -->
-    <!-- ======================== -->
+
     <!-- bloging card Start -->
     <div class="container py-5">
       <hr />

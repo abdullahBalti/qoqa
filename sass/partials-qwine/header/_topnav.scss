@@ -50,11 +50,7 @@
   .nav-right {
     padding-right: 10px;
   }
-  .nav-right button{
-    text-transform: uppercase;
-    // background-color: var(--se);
-  }
-  .nav-right button:last-child {
+  .nav-right span:last-child {
     margin-left: 25px;
   }
   @include responsive(tab-lend){

@@ -35,13 +35,6 @@ button {
   font-size: 16px;
   font-family: Roboto, sans-serif; }
 
-.btn-info {
-  background-color: transparent !important; }
-
-.btn-bg {
-  background-color: var(--se) !important;
-  border: none !important; }
-
 /*=================*/
 /*top nav*/
 /*===============*/
@@ -83,9 +76,7 @@ button {
     height: 37px; }
   .top-nav .nav-right {
     padding-right: 10px; }
-  .top-nav .nav-right button {
-    text-transform: uppercase; }
-  .top-nav .nav-right button:last-child {
+  .top-nav .nav-right span:last-child {
     margin-left: 25px; }
   @media only screen and (max-width: 1024px) {
     .top-nav .top-nav {
