@@ -16,6 +16,9 @@
 body {
   font-family: Roboto, sans-serif; }
 
+body > * {
+  overflow-x: hidden; }
+
 li {
   list-style: none; }
 
@@ -36,6 +39,7 @@ button {
 /*top nav*/
 /*===============*/
 .top-nav {
+  width: 100%;
   grid-column: 1 / 17;
   grid-row: 1 / 3;
   display: flex;
@@ -109,10 +113,10 @@ button {
       background-color: #f7f7f7;
       z-index: 550; } }
   @media only screen and (max-width: 675px) {
-    .top-nav {
+    .top-nav .top-nav {
       width: 100%; }
-      .top-nav .nav-right-on-rsponsive span {
-        display: none; } }
+    .top-nav .nav-right-on-rsponsive span {
+      display: none; } }
 
 /*end of top nav*/
 .dropdown-onclick {
@@ -316,10 +320,15 @@ button {
 .header {
   width: 100%;
   display: grid;
+  grid-template-columns: repeat(16, 1fr);
   grid-template-rows: repeat(12, 55px);
   background-image: url("../image/cover-web-1.jpg");
   background-size: cover;
   background-position: center; }
+  @media only screen and (max-width: 675px) {
+    .header {
+      width: 100%;
+      overflow-y: auto; } }
   .header .slider-content {
     grid-column: 1 / 17;
     width: 100%;
@@ -355,7 +364,7 @@ button {
             font-size: 2rem; } }
       @media only screen and (max-width: 675px) {
         .header .slider-content .left-side {
-          width: 95vw; }
+          width: 100%; }
           .header .slider-content .left-side h1 {
             font-size: 1.5rem; } }
     .header .slider-content .link-center {
@@ -431,7 +440,7 @@ button {
       .header .slide-bottom {
         display: flex;
         flex-wrap: wrap;
-        border: 1px solid black; }
+        width: 100%; }
         .header .slide-bottom .bootom-left {
           width: 100%; }
         .header .slide-bottom .bootom-right {

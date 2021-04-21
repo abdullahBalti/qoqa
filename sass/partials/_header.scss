@@ -5,11 +5,15 @@
 .header {
   width: 100%;
   display: grid;
-  // grid-template-columns: repeat(16, 1fr);
+  grid-template-columns: repeat(16, 1fr);
   grid-template-rows: repeat(12, 55px);
   background-image: url("../image/cover-web-1.jpg");
   background-size: cover;
   background-position: center;
+@include responsive(phone){
+  width: 100%;
+  overflow-y: auto;
+}  
   .slider-content{
     grid-column: 1 / 17;
     width: 100%;
@@ -47,7 +51,7 @@
       h1{font-size: 2rem;}
     }
     @include responsive(phone){
-      width: 95vw;
+      width: 100%;
       h1{font-size: 1.5rem;}
     }    
     }//end let side box
@@ -107,10 +111,8 @@
       margin-left: 25px;
     }        
     }//end of right side
-    
+  
   }    
-
-
   .slide-bottom{
     grid-column: 1 / 17;
     grid-row: 15 / 17;
@@ -146,11 +148,10 @@
   @include responsive(tab){
     display: flex;
     flex-wrap: wrap;
-    border: 1px solid black;
+    width: 100%;
     .bootom-left{width: 100%;} 
     .bootom-right{width: 100%;} 
-  }    
-
+  }
   }//end of slide bottom
 
 }// end header
