@@ -1,0 +1,104 @@
+
+.page-nav-section {
+  border-bottom: 1px solid #4444;
+  width: 100%;
+}
+.page-nav {
+  width: 100%;
+  display: flex;
+  margin: auto;
+  line-height: 90px;
+}
+.page-link {
+  width: 30%;
+}
+.page-link-list li {
+  margin-left: 15px;
+  text-transform: capitalize;
+}
+.page-link-list a {
+  color: var(--fs);
+}
+.page-link-list li:first-child {
+  margin-left: 0px;
+}
+.page-link-list {
+  display: flex;
+}
+.commint-link {
+  width: 20%;
+  color: var(--se);
+}
+.commint-link::before {
+  content: "";
+  border-left: 1px solid var(--fs);
+  padding-right: 15px;
+}
+.text-link {
+  display: flex;
+  line-height: 20px;
+}
+.text-link img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  margin-top: 15px;
+}
+.text-link p {
+  margin: 15px 15px;
+}
+.text-link p span {
+  font-size: 13px;
+}
+/* ============== */
+/* garden */
+.garden {
+  width: 100%;
+}
+.garden img {
+  width: 100%;
+}
+.col-text {
+  line-height: 25px;
+}
+.col-text p {
+  margin-top: 15px;
+}
+.row:last-child {
+  margin-top: 25px;
+}
+/*=======================*/
+/*component-section*/
+/*=======================*/
+/* blogging card CSS */
+.backgroundBlack {
+  background-color: #f7f7f7;
+  color: var(--fs);
+}
+.avatarBox img {
+  border-radius: 50%;
+}
+.newsletter {
+  /* border: 1px solid #262626; */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+  background-color: #fff;
+}
+.formInput {
+  background-color: var(--fs);
+  padding: 10px 15px;
+}
+.backgroundDark {
+  background-color: var(--se);
+  padding: 6px 5px;
+  margin-left: -5px;
+}
+.emailInp {
+  padding: 5px 5px;
+}
+.specs {
+  background-color: #f7f7f7;
+  color: var(--fs);
+}
+.specs p {
+  margin: 3px;
+}

@@ -12,6 +12,7 @@ closeBtn.addEventListener("click", function () {
   sidebar.classList.remove("show-sidebar");  
 });
 
+
 const clickbtn = document.querySelector(".clickbtn");
 const myDropdown = document.getElementById("myDropdown");
 clickbtn.addEventListener("click", ()=>{
